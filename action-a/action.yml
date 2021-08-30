@@ -1,17 +1,17 @@
-名前：「ハローアクション」
-説明：「誰かに挨拶する」
-作者：「 octocat@github.com 」
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
 
-入力：
-   MY_NAME：
-    説明："誰に挨拶するか"
-    必須：真の
-    デフォルト："世界"
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
 
-実行：
-  使用：「ドッキングウィンドウ」
-  イメージ：「 Dockerfile 」
+runs:
+  using: "docker"
+  image: "Dockerfile"
 
-ブランディング：
-  アイコン：「マイク」
-  カラー：「パープル」
+branding:
+  icon: "mic"
+  color: "purple"
